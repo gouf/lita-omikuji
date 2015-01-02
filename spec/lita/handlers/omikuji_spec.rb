@@ -8,4 +8,11 @@ describe Lita::Handlers::Omikuji, lita_handler: true do
     send_message('omikuji')
     expect(omikuji_list).to include(replies.last)
   end
+
+  it { is_expected.to route_http(:get, '/hello') }
+  it { is_expected.to route_http(:get, '/hello').to(:hello) }
+  it 'access /hello' do
+    response = http.get('/hello')
+    expect(response.body).to eq('Hello!')
+  end
 end
