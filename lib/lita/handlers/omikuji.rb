@@ -3,7 +3,6 @@ module Lita
   module Handlers
     class Omikuji < Handler
       route(/omikuji/i, :omikuji)
-      http.get('/hello', :hello)
 
       def omikuji(response)
         omikuji_list = %w(
@@ -13,10 +12,6 @@ module Lita
           末凶 凶 大凶
         ).freeze
         response.reply(omikuji_list.sample)
-      end
-
-      def hello(_request, response)
-        response.write('Hello!')
       end
     end
 
