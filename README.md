@@ -1,6 +1,8 @@
 # lita-omikuji
 
-TODO: Add a description of the plugin.
+`omikuji` でおみくじを引く
+
+Draw your fortune, remarks `omikuji`
 
 ## Installation
 
@@ -9,15 +11,6 @@ Add lita-omikuji to your Lita instance's Gemfile:
 ``` ruby
 gem "lita-omikuji"
 ```
-
-
-## Configuration
-
-TODO: Describe any configuration attributes the plugin exposes.
-
-## Usage
-
-TODO: Describe the plugin's features and how to use them.
 
 ## License
 
